@@ -1,0 +1,31 @@
+CHUNKING :
+
+Chunking is a cognitive and computational technique used to break down large pieces of information into smaller, manageable units, or “chunks.” This method is widely applied in fields such as psychology, education, data processing, and artificial intelligence to enhance understanding, memory, and performance.
+
+In psychology, chunking helps individuals remember complex information by grouping related items together. For example, it's easier to remember a phone number when it's split into chunks (e.g., 123-456-7890) rather than a long string of digits.
+
+In the context of artificial intelligence and natural language processing, chunking is used to divide long texts or inputs into smaller segments that a model can process more efficiently. This is especially important for large language models, which have limits on the number of tokens (words or word parts) they can handle at once.
+
+For example, when analyzing a long article or a book, an AI system may chunk the text into paragraphs or sections. This allows the model to process each chunk individually and retain the structure and meaning of the entire content when analyzing or summarizing it.
+
+Chunking is also used in machine learning to structure data for training models. Breaking data into smaller parts can improve the learning process and allow the system to detect patterns more effectively.
+
+In education, chunking helps students learn better by presenting complex concepts in simpler, connected parts. Teachers often use this method to improve comprehension and reduce cognitive overload.
+
+In coding or programming, chunking can involve organizing code into reusable modules or functions, making it easier to understand, maintain, and debug.
+
+Overall, chunking is a powerful strategy for enhancing efficiency, whether it's in human learning, AI processing, or data analysis. It supports better comprehension, memory retention, and performance by transforming overwhelming information into digestible segments.
+
+
+FUNCTION :
+
+def chunk_text(text, max_words=100):
+        words = text.split()
+        chunks = []
+    
+    for i in range(0, len(words), max_words):
+        chunk = ' '.join(words[i:i + max_words])
+        chunks.append(chunk)
+    
+    return chunks
+
